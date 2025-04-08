@@ -30,6 +30,34 @@ A scalable, asynchronous web crawler built using `Playwright`, `aiohttp`, and `B
 
 ---
 
+## 🧠 Product URL Detection Logic
+
+To determine if a page is a "product" page, the crawler uses a multi-step heuristic approach:
+
+1. **Domain-Specific Patterns**  
+   If the domain has pre-configured product URL patterns in `config/domains.json`, any matching URL is immediately flagged as a product page.
+
+2. **Structured Data Detection**  
+   If the HTML contains JSON-LD (`<script type="application/ld+json">`) with `@type: Product`, it is marked as a product page.  
+   Similarly, a meta tag like `<meta property="og:type" content="product">` also qualifies.
+
+3. **Keyword Matching**  
+   The crawler searches the visible text on the page for common product-related keywords like:
+
+   - `add to bag`
+   - `add to cart`
+   - `buy now`
+   - `notify me`
+   - `mrp`
+   - `review`
+
+   If any are found (with fuzzy logic for multi-word phrases), the page is considered a product page.
+
+4. **JavaScript Rendering**  
+   If a domain requires JavaScript to render product elements, Playwright is used to render the page and then apply the above logic.
+
+This combination allows flexible and reasonably accurate detection of product pages across various e-commerce domains.
+
 ### 📦 Install dependencies
 
 ```bash

@@ -13,8 +13,5 @@
   "https://www.westside.com": {
     "product_url_patterns": ["/products/"],
     "requires_js": true
-  },
-  "https://www.inmyprime.in": {
-    "product_url_patterns": ["/products/"]
   }
 }

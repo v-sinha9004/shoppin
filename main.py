@@ -3,7 +3,6 @@ import asyncio
 from utils.helpers import normalize_domain, extract_links, is_product_url, save_to_csv, fetch
 from utils.constants import CONFIG_PATH
 from utils.config_loader import load_domain_config, get_domain_config
-from db import save_scraped_data
 
 DOMAIN_CONFIG = load_domain_config()
 
