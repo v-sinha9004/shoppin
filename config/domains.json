@@ -1,0 +1,20 @@
+{
+  "https://www.virgio.com": {
+    "product_url_patterns": ["/product/", "/p/", "/products/"]
+  },
+  "https://www.tatacliq.com": {
+    "product_url_patterns": ["/product/", "/pdp/"],
+    "requires_js": true
+  },
+  "https://www.nykaafashion.com": {
+    "product_url_patterns": ["/p/", "/product/"],
+    "requires_js": true
+  },
+  "https://www.westside.com": {
+    "product_url_patterns": ["/products/"],
+    "requires_js": true
+  },
+  "https://www.inmyprime.in": {
+    "product_url_patterns": ["/products/"]
+  }
+}

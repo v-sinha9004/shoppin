@@ -167,7 +167,7 @@ When data grows to **millions of records**, consider:
 ## 🧑‍💻 Author
 
 **Vishal Sinha**  
-Freelance Full Stack Developer | [LinkedIn](https://www.linkedin.com/in/vishal-sinha-dev)
+Freelance Full Stack Developer | [LinkedIn](https://www.linkedin.com/in/vishal15456/)
 
 ---
 

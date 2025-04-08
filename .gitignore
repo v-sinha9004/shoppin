@@ -1,0 +1,48 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environments
+.venv/
+env/
+venv/
+ENV/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Pytest cache
+.pytest_cache/
+
+# VSCode and IDE configs
+.vscode/
+.idea/
+
+# Environment variable files
+.env
+.env.*
+
+# Output and logs
+output/
+logs/
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Playwright downloads and browser cache
+playwright/.cache/
+playwright/.playwright/
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+
+# MongoDB dumps (if any)
+dump/
